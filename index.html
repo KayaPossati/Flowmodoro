@@ -10,13 +10,33 @@
   </head>
   <body>
     <div id="background" class="background work">
-      <h1>Flowmodoro</h1>
-      <h2 id="mode">Work Time</h2>
-      <div id="timer" class="timer">
-        <p id="time">00:00</p>
-        <div class="btns">
-          <button onclick="start()">Start</button>
-          <button onclick="stopTimer()">Pause</button>
+      <input type="checkbox" id="switch" />
+      <div class="app">
+        <div class="content">
+          <label for="switch">
+            <div class="toggle"></div>
+            <div class="names">
+              <p class="pomo">Pomodoro</p>
+              <p class="flow">Flowmodoro</p>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <div id="Flowmodoro">
+        <h1>Flowmodoro</h1>
+        <h2 id="mode">Work Time</h2>
+        <div id="timer" class="timer">
+          <p id="time">00:00</p>
+          <div class="btns">
+            <button class="btn" onclick="start()">Start</button>
+            <button class="btn" onclick="stopTimer()">Pause</button>
+          </div>
+        </div>
+        <div id="side">
+          <p id="total">Total Time</p>
+          <p id="sidetime">00:00</p>
+          <div id="format"></div>
         </div>
       </div>
     </div>
